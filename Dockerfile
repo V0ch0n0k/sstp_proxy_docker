@@ -19,4 +19,5 @@ COPY ./src/sstp_starter.sh /home/scripts/sstp_starter.sh
 RUN sed -i 's/\r$//' /home/scripts/sstp_starter.sh \
  && chmod +x /home/scripts/sstp_starter.sh
 
+EXPOSE 3128
 CMD ["/home/scripts/sstp_starter.sh"]

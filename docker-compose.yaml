@@ -18,7 +18,7 @@ services:
       # IPv6 не идёт через туннель, поэтому отключаем, чтобы не было утечек
       - net.ipv6.conf.all.disable_ipv6=1
     ports:
-      - "80:443"
+      - "3128:3128"
     volumes:
       - ./logs/vpn:/var/log/vpn
       - ./logs/squid:/var/log/squid
