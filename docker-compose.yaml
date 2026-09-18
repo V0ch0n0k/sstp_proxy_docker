@@ -14,4 +14,3 @@ services:
       - ./logs/vpn:/var/log/vpn
       - ./logs/squid:/var/log/squid
       - ./src/squid.conf:/etc/squid/squid.conf
-    command: ["/home/scripts/sstp_starter.sh"]
